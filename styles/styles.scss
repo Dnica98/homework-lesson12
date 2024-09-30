@@ -1,0 +1,113 @@
+@import '../styles/mixin.scss';
+
+body {
+    margin: 0;
+   background-color: var(--primary-color);
+}
+
+.page-header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 60px 72px;
+    @include container();
+    
+
+    &__logo-wrapper {
+        display: flex;
+        align-items: center;
+                
+    }
+    &__logo {
+        width: 40px;
+
+    }
+    &__logo-text {
+        font-weight: bold;
+        color: white;
+        @include textFont(16px);
+    }
+    &__logo-text2 {
+        color: white;
+        @include textFont(12px);
+    }
+    &__navigation-wrapper{
+        display: flex;
+        gap: 24px;
+    }
+    &__navigation {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    &__link{
+        color: white;
+        text-decoration: none;
+        @include textFont(14px);
+    }
+    &__register-btn {
+        @include primaryBtn;
+    }
+    
+}
+
+.page-content{
+    width: 100vw;
+    padding: 10px 64px;
+
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        @include container();
+
+    }
+
+    &__heading {
+       @include textFont(36px);
+        
+    }
+    &__sub-heading {
+        @include textFont(12px);
+    }
+
+    &__register-btn{
+        @include primaryBtn;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+    }
+    &__photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 200px;
+       
+    }
+    &__team-photo{
+        width: 400px;
+        
+    }
+    &__slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 50px;
+        gap: 8px;
+
+    }
+    &__slide-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color:white;
+        opacity: var(--bg-opacity, 1);
+    }
+}
