@@ -22,7 +22,9 @@
     gap: 12px;
     height: 30px;
     padding: 0 32px; 
+    cursor: pointer;
     @include textFont(14px);
+    
 }
 
 @mixin container {
