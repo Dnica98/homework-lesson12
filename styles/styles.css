@@ -142,4 +142,49 @@ body {
   border-radius: 50%;
   background-color: white;
   opacity: var(--bg-opacity, 1);
+}
+.page-content__block2 {
+  display: inline-block;
+  width: 700px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+.page-content__upp-heading {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+.page-content__heading2 {
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+.page-content__image-text {
+  display: flex;
+  flex-direction: row;
+}
+.page-content__our-teammate {
+  width: 300px;
+}
+.page-content__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 10px;
+  gap: 16px;
+}
+.page-content__our-team {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: white;
+}
+.page-content__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }/*# sourceMappingURL=styles.css.map */

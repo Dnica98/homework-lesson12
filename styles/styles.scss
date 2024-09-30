@@ -110,4 +110,48 @@ body {
         background-color:white;
         opacity: var(--bg-opacity, 1);
     }
+    &__block2{
+        display: inline-block;
+        width: 700px;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+
+    &__upp-heading{
+        @include textFont(10px);
+        text-align: center;
+    }
+    &__heading2{
+        @include textFont(36px);
+        text-align: center;
+    }
+
+    &__image-text{
+        display: flex;
+        flex-direction: row;
+    }
+    &__our-teammate{
+        width: 300px;
+        
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 10px;
+        gap: 16px;
+    }
+
+    &__our-team{
+        @include textFont(12px);
+        
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+
 }
